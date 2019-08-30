@@ -1,0 +1,8 @@
+<h1>{{ organization.name }}</h1>
+
+<ul>
+   <li>{{organization.description}}</li>
+   <li>{{organization.email}} -- {{organization.address}} -- {{organization.phone}}</li><br>
+   <a href="{% url 'volunteering:activity_form' %}" type="submit" class="btn btn-activity">Add Activity</a>
+</ul>
+

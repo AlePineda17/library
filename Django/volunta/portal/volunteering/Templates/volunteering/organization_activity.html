@@ -1,0 +1,14 @@
+<h1>{{ activity.organization }}</h1>
+
+<ul>
+<!--    {% for object in activity_list %}-->
+    <li>{{activity.type}} </li>
+    <li>{{activity.place}} -- {{activity.start_time}} -- {{activity.end_time}}</li><br>
+    <li>{{activity.requirements}}</li>
+    <li>{{activity.description}}</li>
+
+<!--   <&#45;&#45; <a href="{% url 'volunteering:subscribe' %}" type="submit" class="btn btn-subscribe">Subscribe</a> &ndash;&gt;-->
+    {% empty %}
+    <li>Esta vacio</li>
+    {% endfor %}
+</ul>

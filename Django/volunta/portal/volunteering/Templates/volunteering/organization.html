@@ -1,0 +1,7 @@
+
+{% for organization in organization_list %}
+<li><strong>{{organization.name}}:</strong> {{organization.description}}</li><br>
+<a class="btn btn-org" href="{% url 'volunteering:organization_activity' %}" type="submit">See more</a>
+{% empty %}
+<li>Esta vacio</li>
+{% endfor %}
